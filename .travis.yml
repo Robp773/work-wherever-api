@@ -1,4 +1,11 @@
- language: node_js
- node_js: node
- services:
-     - mongodb
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: g/HSGKGUQYl1DZLd7fvwS2c06rK0PmrikTrTmtQVHvUdZhxfqzKG2LCjTuOiVy0QLQXpSF87W7TwgEWDfvtdYNkOBpxUJZz6NUWe8DlG13acsIqtru4p7TWdwi/T5UgPcxE8aCo0WZpYp8GhiamZkifDuZ0Zvnh2E2HYqn4EWxIVUxRze+FlCkrxzikPXZWbitGiL0BGS9ZcfzSj6RrPNhHjBV8CxGHKNw2y5zmfaEcW7fi4qJqXnguHCt5Q/7Z26mYgpJbQxC77vGDYgEUoA3fy+R0StnMzq+nmkvUI2Vh9xTC84G8UwQc4ggWCH5r6LCF/COCdOiwljZMVb9cW38Ydw9M5lO0PFOd+3zBaR3r06vYHd9vfxaZO1aBeGJbZokbGWgMHoxvLU/6YI6BDV+jln3nHECbeJ0N6TVaIT/REtmWlqNA/8+i9oC6sqcu8eDqEOHAa8EqRSEJdM5vIpEGUJPp6l1mLU9eiDOlx/Hc9SAswnEk5rc+r7PP5tLLyW4sQW4WRnWDzC01I1qkm0vTrPY81216fhnPkoS4CCRcb4qdRiCKPSgNLnkAsKdN7tt28pdmjhtAATE7V82sBiRCm/wbceEIXfD44UfDdVxgSkiQcxbqmCOILAUlhyDVoaF95vdYB8Pb2xjEbd8L6hH5KV0t4HYyAIfKK5F3iApA=
+  app: evening-woodland-75028
+  on:
+    repo: Robp773/work-wherever-api
